@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络文本</title>
+    <link rel="stylesheet" href="css/NetworkText.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 状态提示区域移到顶部 -->
+        <div id="statusMsg" class="status-message"></div>
+
+        <!-- 标题区域 -->
+        <header>
+            <h1>网络文本</h1>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main>
+            <div class="content-wrapper">
+                <div class="textarea-wrapper">
+                    <textarea 
+                        id="textContent" 
+                        placeholder=""
+                    ></textarea>
+                    <button id="clearBtn" class="clear-btn" title="清空内容"></button>
+                    <div class="textarea-tips">
+                        <p>欢迎使用网络文本工具！</p>
+                        <p>这是一个简单的在线文本编辑器，你可以：</p>
+                        <ol>
+                            <li>在这里记录任何文字</li>
+                            <li>点击保存按钮保存内容</li>
+                            <li>使用复制按钮复制全部文本</li>
+                            <li>下载文本保存到本地</li>
+                            <li>通过复制链接分享给他人</li>
+                        </ol>
+                        <p>开始输入你的内容吧...</p>
+                    </div>
+                </div>
+                
+                <!-- 操作按钮区域 -->
+                <div class="button-group">
+                    <button id="saveBtn" class="btn">保存内容</button>
+                    <button id="copyBtn" class="btn">复制文本</button>
+                    <button id="downloadBtn" class="btn">下载文本</button>
+                    <button id="copyLinkBtn" class="btn">复制链接</button>
+                    <!-- 二维码显示区域 -->
+                    <div id="qrcodeContainer" class="qrcode-container"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/NetworkText.js"></script>
+</body>
+</html> 
