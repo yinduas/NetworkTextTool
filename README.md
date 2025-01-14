@@ -158,4 +158,4 @@ import QRCode from '../js/qrcode.min.js'
 - 优化了状态
 - 优化了逻辑
 
-项目不维护了！！！
+项目停止维护！！！
